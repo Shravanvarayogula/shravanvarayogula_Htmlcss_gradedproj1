@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Lab Test - Registration</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="lab-test.css">
+    </head>
+    <body>
+        <sction id="form-container"> 
+            <form action="" id="lab-form">
+                <img src="./Images/Lab-Test/lab-test.jpg" alt="Image"> 
+                <h2>1. Contact Details</h2> 
+                <input type="text" title="patient_name" placeholder="Full Name" required>
+            
+                <input type="number" title="patient_id" placeholder="Patient Id (if exists)" required>
+                
+                <input type="number" title="contact_no" min="6000000000" max="9999999999" placeholder="Contact Number" required>
+                
+                <input type="email" title="email" placeholder="Email id" required>
+                <h2>2. Address</h2>
+                <input type="text" title="h-no" placeholder="House No" required>
+                
+                <input type="text" title="street" placeholder="Street" required>
+            
+                <input type="text" title="area" placeholder="Area" required>
+
+                <h4>District</h4>
+            <select name="District" id="district" required>
+                <option value="">Choose</option>
+                <option value="Hyderabad"> Hyderabad</option>
+                <option value="Rangareddy">Rangareddy</option>
+                <option value="Secunderabad">Secunderabad</option>
+            </select>
+                <h2>3. Choose the Test type</h2>
+                <p>(Check atleast one box without fail)</p>
+                <input type="checkbox" id="c1" name="option1" value="CBC">
+                 <label for="c1">CBC</label>
+                <br>
+                <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                <label for="c2">Complete Urine</label>
+                <br>
+                <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                <label for="c3">Lipid Profile</label>
+                <br>
+                <input type="checkbox" id="c4" name="option4" value="Thyroid Stimulating Hormone(TSH)">
+                <label for="c3">Thyroid Stimulating Hormone(TSH)</label>
+                <br>
+                <input type="checkbox" id="c4" name="option5" value="Glucose Test">
+                <label for="c3">Glucose Test</label>
+
+                <h2>4. Do you want a hard copy of the Report? </h2>
+
+                <input type="radio" id="c5" name="option" value="True" required>
+                <label for="c5">Yes</label>
+                
+                <input type="radio" id="c6" name="option" value="False">
+                <label for="c6">No</label>
+            
+                <h2>5. Select your comfortable Date and Time </h2>
+                <input type="date" name="date" required>
+                <br>
+                <input type="time" required>
+
+            </form> 
+            <button form="lab-form">Reset</button>
+            <button form="lab-form">Submit</button>
+
+        </sction>
+        
+    </body>
+</html>
